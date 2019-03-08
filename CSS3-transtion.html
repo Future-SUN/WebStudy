@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>补间动画</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: #eeeeee;
+        }
+        .content{
+            width: 800px;
+            height: 320px;
+            padding-left: 20px;
+            margin: 80px auto;
+        }
+        .item{
+            width: 230px;
+            height: 300px;
+            text-align: center;
+            margin-right: 20px;
+            background-color: #ffffff;
+            float: left;
+            position: relative;
+            top: 0;
+            overflow: hidden;
+            transition: all .5s;
+        }
+        .item img{
+            margin-top: 30px;
+        }
+        .item .desc{
+            position: absolute;
+            left: 0;
+            top: 300px;
+            width: 100%;
+            height: 80px;
+            background-color: #ff6700;
+            transition: all 0.5s;
+        }
+        .item:hover{
+            top: -5px;
+            box-shadow: 0 0 15px #aaa;
+        }
+        .item:hover .desc{
+            top: 220px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="item">
+            <img src="./pms_1500287084.72131750_220x220.jpg" />
+        </div>
+        <div class="item">
+            <img src="./pms_1522318330.86967810_220x220.jpg" />
+            <span class="desc"></span>
+        </div>
+        <div class="item">
+            <img src="./pms_1539855763.04646220_220x220.jpg" />
+            <span class="desc"></span>
+        </div>
+    </div>
+</body>
+</html>

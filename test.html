@@ -2,8 +2,81 @@
 <head>
     <meta charset="utf-8">
     <title>this is a JS-TEST</title>
+    <style>
+       /* body{background-image: url(../cover.jpg);
+        background-repeat: repeat-x;} */
+        p{width:100px;
+          height:100px;
+          margin: 100px}
+        .p1{overflow: auto;}
+        .p2{overflow: hidden;}
+        .p3{overflow: visible;}
+        ul{list-style: none;
+         
+          background-color: black;
+          width: 400px;
+          height: 60px;}
+        li{margin-top: 10px; float: left;
+        margin-left: 30px}
+        a{text-decoration: none;
+        color: #ffffff;}        
+        .square1{font-size: 18px;
+        border: red 1px solid;
+        padding: 10px;
+        margin: 30px;
+        }
+        div{width: 0px;
+        height: 0px;
+        border-width: 30px;
+        border-style: solid dashed;
+        border-color: red transparent;}
+    </style>
 </head>
 <body>
+    <form>
+        <input type="button" value="普通按钮"/>
+        <input type="submit" value="提交按钮"/>
+        <input type="reset" value="重置按钮"/>
+        <input type="image" value="图片按钮" src="../cover.jpg"/>
+        <input type="file" value="文件上传按钮"/>
+        <br/>
+        <select>
+            <option value="">幼儿园</option>
+            <option value="">小学</option>
+            <option value="">初中</option>
+            <option value="">高中</option>
+        </select>
+        <br/>
+        <select name="" id="" size="3">
+            <option value="">幼儿园</option>
+            <option value="">小学</option>
+            <option value="">初中</option>
+            <option value="">高中</option>
+            <option value="">大学</option>
+        </select>
+        <br/>
+        <select name="" id="" multiple>
+            <option value="">幼儿园</option>
+            <option value="">小学</option>
+            <option value="">初中</option>
+            <option value="">高中</option>
+            <option value="">大学</option>
+        </select>
+    <p class="square1">
+        昂到发来航管恰尔将军俺们带物产仓等开赛怕期货桑德女警奥扫爹男桑说盘囊苏当否新民很笨绷脚这鸟这是
+    </p>
+    </form>
+    <p class="p1">我也不知道该说点啥，这事你看着办吧，我累了，不想再关了，就由他去吧，但是有句话我的说在前面，不要太过火，小心引火自焚。</p>
+    <p class="p2">我也不知道该说点啥，这事你看着办吧，我累了，不想再关了，就由他去吧，但是有句话我的说在前面，不要太过火，小心引火自焚。</p>
+    <p class="p3">我也不知道该说点啥，这事你看着办吧，我累了，不想再关了，就由他去吧，但是有句话我的说在前面，不要太过火，小心引火自焚。</p>
+    <ul>
+        <li><a href="">首页</a></li>
+        <li><a href="">视频</a></li>
+        <li><a href="">音乐</a></li>
+        <li><a href="">图片</a></li>
+        <li><a href="">应用</a></li>
+    </ul>
+    <div></div>
     <script>
         func();
         function func(){console.log("hello sy1");}
