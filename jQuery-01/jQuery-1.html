@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../jquery-3.3.1.js"></script>
+    <script>
+    jQuery(document).ready(function(){
+        $("button").click(function(){
+            var jqNewLi = $("<li>我是jQuery创建出来的li。用的是append方法添加</li>");
+            $("ul").append(jqNewLi);
+        })
+    });
+    </script>
+</head>
+<body>
+<button>添加li</button>
+<ul>
+    <li>我是土著</li>
+</ul>    
+</body>
+</html>
